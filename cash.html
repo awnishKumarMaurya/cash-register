@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cash Register</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cash.css">
+    <script src="./cash.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button onclick="darkmode()">dark mode</button>
+        
+        
+        <div class="container">
+            <section class="content">
+            <h1>THE CASH REGISTER</h1> 
+            <P>Enter the amount and check out the change to get.</P>
+        </section>
+    </div>
+            <form id="bill-form">
+                <div class="form-group">
+                    <label for="bill">Bill Amount</label>
+                    <input
+                    type="text"
+                    name="bill_amount"
+                    id="bill"
+                    placeholder="0.0"
+                    required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="cash">CASH Amount</label>
+                    <input
+                    type="text"
+                    name="cash_amount"
+                    id="cash"
+                    placeholder="0.0"
+                    required
+                    />
+                </div>
+                <div class="form-group">
+                    <button type="submit">Check</button>
+                </div>
+            
+            </form>
+            <p class="invalid-input">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ex!
+        </p>
+            <section class="output"></section>
+            <h2>CHANGE</h2>
+            <table class="notes">
+                <tbody>
+                    <tr id="notes-value">
+                        <th>number of notes</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <th>notes</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>01</td>
+                    </tr>
+                </tbody>
+            </table>
+      
+    </main>
+    <footer>
+        <p class="copyright">&copy;|2022|awnish maurya</p>
+    </footer>
+</body>
+</html>
